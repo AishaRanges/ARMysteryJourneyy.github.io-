@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="icon/png" href="penetration-testing.jpg">
+	<title>Cyberattacks and Data Breaches Awareness</title>
+</head>
+
+<body>
+<section class="first">
+
+								
+
+<!--Resources-->
+	<div class="bannerVideo" id="slideShow">
+		<video src="Vid1.mp4" autoplay muted loop class="active" type="video/mp4"></video>
+		<video src="Vid2.mp4" autoplay muted loop></video>
+		<video src="Vid3.mp4" autoplay muted loop></video>
+		<!--<video src="video4.mp4" autoplay muted loop></video>-->
+	</div>
+
+<!-- Navbar -->
+	<div class="container">
+		<header id="navbar">
+			<a href="#" class="logo">Cyberattacks and Data Breaches</a>
+			<ul>
+				<li><a href="#" class="active">Home</a></li>
+				<!--<li><a href="#">Newsroom</a></li>
+				<li><a href="#" >Events</a></li>-->
+				<li><a href="#aboutus">About Us</a></li>
+				<li><a href="#aboutus">Contact Us</a></li>
+			</ul>
+			<span class="menuIcon" onclick="toggleMenu();"></span>
+		</header>
+
+<!--Video Intro-->
+		<div class="content">
+			<div class="bannerText" id="slideShowText">
+				<div class="active">
+					<h2>Section 1</h2>
+					<p>Understanding Cyberattacks.</p>
+					<a href="#section1" class="readmore">View More</a>
+				</div>
+				<div>
+					<h2>Section 2</h2>
+					<p>Data Breaches.</p>
+					<a href="#section2" class="readmore">View More</a>
+				</div>
+				<div>
+					<h2>Section 3</h2>
+					<p>Preventive Measures.</p>
+					<a href="#section3" class="readmore">View More</a>
+				</div>
+				<!--<div>
+					<h2>Sound</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>-->
+			</div>
+		</div>
+
+		<ul class="controls">
+			<li onclick="prevSlide();prevSlideText();"><img src="left.png"></li>
+			<li onclick="nextSlide();nextSlideText();"><img src="right.png"></li>
+		</ul>
+	</div>
+</section>
+
+<!--Arrow Controls-->
+<script type="text/javascript">
+	const slideShow = document.getElementById('slideShow');
+	const slides = slideShow.getElementsByTagName('video');
+	var index = 0;
+	function nextSlide(){
+		slides[index].classList.remove('active');
+		index = (index + 1) % slides.length;
+		slides[index].classList.add('active');
+	}
+	function prevSlide(){
+		slides[index].classList.remove('active');
+		index = (index - 1 + slides.length) % slides.length;
+		slides[index].classList.add('active');
+	}
+
+
+    const slideShowText = document.getElementById('slideShowText');
+	const slidesText = slideShowText.getElementsByTagName('div');
+	var i = 0;
+	function nextSlideText(){
+		slidesText[i].classList.remove('active');
+		i = (i + 1) % slidesText.length;
+		slidesText[i].classList.add('active');
+	}
+	function prevSlideText(){
+		slidesText[i].classList.remove('active');
+		i = (i - 1 + slidesText.length) % slidesText.length;
+		slidesText[i].classList.add('active');
+	}
+	function toggleMenu(){
+		const menuIcon = document.querySelector('.menuIcon');
+		const navbar = document.getElementById('navbar');
+		menuIcon.classList.toggle('active');
+		navbar.classList.toggle('active');
+	}
+</script>
+
+<section class="second">
+	<div class="section1">
+		<a name = "section1" class="section1"><h1>Understanding Cyberattacks</h1></a>
+		<p class="desca">Understanding cyberattacks is crucial in the modern digital landscape. It encompasses awareness of various malicious activities orchestrated by cybercriminals to compromise systems, exploit vulnerabilities, and gain unauthorized access to sensitive data. This knowledge involves staying informed about evolving cyber threats, tactics, and techniques employed by attackers By understanding the dynamics of cyberattacks, individuals and organizations can better prepare and implement effective cybersecurity measures .</p>
+		<div class="totalsection1">
+			<div class="prossection1">
+				<h3> Types of Cyberattacks Cyberattacks encompass a wide range of techniques, including:</h3>
+				<p>Phishing: Deceptive emails or messages to trick individuals into revealing sensitive information.</p>
+                <p>Ransomware: Malicious software that encrypts data, demanding a ransom for decryption.</p>
+                <p>Malware:Software designed to damage or gain unauthorized access to systems.</p>
+                <p>DDoS Attacks:Overwhelming a network or website with traffic to disrupt services.</p>
+                <p>Advanced Persistent Threats (APTs): Long-term, targeted attacks for espionage or data theft.</p>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="third">
+		<div class="section2">
+				<a name = "section2" class="section2"><h1>Data Breaches.</h1></a>
+				<p class="descw">Data breaches represent a significant threat in the cybersecurity domain. These incidents involve unauthorized access to confidential or sensitive information, leading to potential exposure or compromise. Personal details, financial records, or intellectual property may be at risk during a data breach. The consequences can be severe, impacting individuals' privacy and organizations' reputations. Detecting and mitigating data breaches require robust security measures, including encryption, access controls, and monitoring systems to promptly identify and respond to unauthorized activities..</p>
+				<div class="totalsection2">
+					<div class="prossection2">
+						<h3>CAUSES</h3>
+						<p>01 - Weak Security: Inadequate security measures or outdated software.</p>
+                        <p>02 - Insider Threats: Employees or trusted individuals with malicious intent.</p>
+                        <p>03 - Third-Party Vulnerabilities: Breaches through service providers or partners.</p>
+                        <p>04 - Unpatched Applications: Any piece of software likely has vulnerabilities that can be exploited by attackers. When vendors release updated versions of software, the latest version usually contains patches to help plug up these vulnerabilities.</p>
+                        <p>05 - Physical Attacks:  Although it is far less common than an insider threat or malware, physical breaches can still cause major damage..</p>
+					</div>
+								
+					<div class="prossection2">
+						<h3>CONSEQUNCES</h3>
+						<p>01 - Financial Loss: Fines, legal expenses, and reputational damage.</p>
+                        <p>02 - Data Exposure: Personal information exposed to cybercriminals.</p>
+                        <p>03 - Regulatory Repercussions: Violations of data protection laws.</p>
+                        <p>04 - Legal Penalties: On top of the financial losses from the attack, data breaches are often accompanied by several legal penalties for failing to protect private information.</p>
+                        <p>05 - Negative Publicity: Lastly, and perhaps the most long-term consequence of a data breach, is the negative publicity that follows. Some companies will forever be tainted with the damage a data breach did to their reputation.</p>
+					</div>
+								
+					<div class="prossection2">
+						<h3>FACTS</h3>
+						<p>01 -FBI’s Growing List of Cyber Criminals: Ever since the FBI expanded their famed list of most wanted criminals in the country to include a list of the most notorious cyber attackers.</p>
+                        <p>02 - Mobile Malware on the Rise: The virulent eyes of malware developers now focus on targeting mobile devices because of its rising popularity among users.</p>
+                        <p>03 - The Dangers of Third-Party App Stores: With all the new malware being released every day.</p>
+                        <p>04 - Rising Number of Identity Theft Victims: Nearly 60 million Americans have been affected by identity theft, while 15 million of them experienced it firsthand.</p>
+                        <p>05 - Average Cost of Data Breach Rises: No sane business owner would want to become a victim of identity theft and data breach.</p>
+					</div>		
+				</div>
+		</div>
+</section>
+
+<section class="fourth">
+	<div class="section3">
+		<a name = "section3" class="section3"><h1>Preventive Measures.</h1></a>
+		<p class="desc">Preventive measures are proactive strategies implemented to fortify cybersecurity defenses and minimize the risk of cyberattacks and data breaches. This includes implementing robust security protocols, regularly updating software, conducting employee training on cybersecurity best practices, and employing advanced technologies such as firewalls and intrusion detection systems. Encryption, multi-factor authentication, and regular security audits are also essential components of preventive measures. By adopting a comprehensive approach to cybersecurity, organizations and individuals can create a resilient defense against the ever-evolving landscape of cyber threats..</p>
+			<div class="totalsection3">
+				<div class="prossection3">
+					<h3>MOTIVATIONS FOR CYBERATTACKS CYBERCRIMINALS HAVE VARIOUS MOTIVATIONS: </h3>
+					<p>Financial Gain: Stealing data or demanding ransoms for profit.</p>
+                    <p> Political Espionage: Nation-states engaging in cyber warfare.</p>  
+                    <p> Hacktivism: Activists using cyberattacks for political or social causes.</p>
+                    <p>   Competitive Advantage: Businesses targeting rivals for intellectual property theft.</p>
+				</div>
+
+				<div class="prossection3">
+					<h3>CYBERSECURITY BEST PRACTICES</h3>
+					<p>Strong Passwords: Use complex, unique passwords and enable multi-factor authentication.</p>
+
+                        <p> Regular Updates: Keep software, systems, and security patches up to date.</p>
+                       
+                            <p> Employee Training: Educate staff about cybersecurity risks and best practices.</p>
+                       
+                                <p>Firewalls and Antivirus: Employ robust security software.</p>
+                       
+                                    <p>Data Encryption: Protect sensitive data in storage and transit. </p>
+				</div>
+
+				<div class="prossection3">
+					<h3>Incident Response Plans</h3>
+					<p>Detection: Rapidly identify a breach's occurrence. </p>
+                    <p> Containment: Isolate affected systems to prevent further damage.</p>
+                    <p>Notification: Comply with legal obligations for data breach reporting.</p>
+					<p>Recovery: Restore affected systems and improve security.</p>
+				</div>
+			
+			</div>
+	</div>
+</section>
+
+<!--FOOTER-->
+<section class="footer">
+	<a name="aboutus" class="aboutus"></a>
+		<h4>About Us</h4>
+		<p>With a wealth of experience and cutting-edge technology we stand at the forefront of safeguarding your invaluable data. Join us on the frontlines of cyberattacks and data breaches, where protection meets innovation. We are students of PANGASINAN STATE UNIVERSITY OF BAYAMBANG CAMPUS, <br>  to disseminate awareness in the world about the Cyberattacks and Data Breaches.</p>
+		<br>
+		<p>Contact Us ↓</p>
+		<p> Have a question or need assistance? We're here to help! Feel free to reach out using the contact, connect with us through email. Your inquires are important to us,and we strive to respond promptly during our operating hours.Thank you for your considering!</p>
+		<div class="image-container">
+			<div class="image">
+				<img src="trisha.jpg" alt="Image 1">
+				<div class="description">trishajamaem@gmail.com</div>
+			</div>
+					
+			<div class="image">
+				<img src="Aisha.jpg" alt="Image 2">
+				<div class="description">cayagoaisha@gmail.com</div>
+			</div>
+					
+			<div class="image">
+				<img src="Rustom.jpg" alt="Image 3">
+				<div class="description">rustomdalope@gmail.com</div>
+			</div>
+
+			<div class="image">
+				<img src="abi.jpg" alt="Image 4">
+				<div class="description">abigaileslao76@gmail.com</div>
+			</div>
+
+			<div class="image">
+				<img src="Janna.jpg" alt="Image 5">
+				<div class="description">teodorojannalae@gmail.com</div>
+			</div>
+
+			<div class="image">
+				<img src="jolly2jpg.jpg" alt="Image 6">
+				<div class="description">jollysaygo@gmail.com</div>
+			</div>
+		</div>        
+			
+    
+		<p>Made by Group 4</p>
+	</section>
+
+</body>
+</html>
